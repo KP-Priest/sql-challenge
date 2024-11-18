@@ -4,12 +4,12 @@
 
 
 CREATE TABLE "employees" (
-    "emp_no" int   NOT NULL,
-    "emp_title_id" int   NOT NULL,
+    "emp_no" integer   NOT NULL,
+    "emp_title_id" integer   NOT NULL,
     "birth_date" dateTime   NOT NULL,
-    "first_name" string   NOT NULL,
-    "last_name" string   NOT NULL,
-    "sex" string   NOT NULL,
+    "first_name" VARCHAR   NOT NULL,
+    "last_name" VARCHAR   NOT NULL,
+    "sex" VARCHAR   NOT NULL,
     "hire_date" dateTime   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_no"
@@ -17,38 +17,38 @@ CREATE TABLE "employees" (
 );
 
 CREATE TABLE "departments" (
-    "dept_no" int   NOT NULL,
-    "dept_name" string   NOT NULL,
+    "dept_no" integer   NOT NULL,
+    "dept_name" VARCHAR   NOT NULL,
     CONSTRAINT "pk_departments" PRIMARY KEY (
         "dept_no"
      )
 );
 
 CREATE TABLE "dept_emp" (
-    "emp_no" int   NOT NULL,
-    "dept_no" int   NOT NULL
+    "emp_no" integer   NOT NULL,
+    "dept_no" integer   NOT NULL
 );
 
 CREATE TABLE "dept_manager" (
-    "dept_no" int   NOT NULL,
-    "emp_no" int   NOT NULL
+    "dept_no" integer   NOT NULL,
+    "emp_no" integer   NOT NULL
 );
 
 CREATE TABLE "titles" (
-    "title_id" int   NOT NULL,
-    "title" string   NOT NULL,
+    "title_id" integer   NOT NULL,
+    "title" VARCHAR   NOT NULL,
     CONSTRAINT "pk_titles" PRIMARY KEY (
         "title_id"
      )
 );
 
 CREATE TABLE "salaries" (
-    "emp_no" int   NOT NULL,
-    "salary" int   NOT NULL
+    "emp_no" integer   NOT NULL,
+    "salary" numeric   NOT NULL
 );
 
 CREATE TABLE "emp_title_id" (
-    "emp_no" int   NOT NULL,
-    "title_id" int   NOT NULL
+    "emp_no" integer   NOT NULL,
+    "title_id" integer   NOT NULL
 );
 
