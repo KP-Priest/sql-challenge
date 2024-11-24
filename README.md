@@ -12,3 +12,12 @@ https://www.dbvis.com/thetable/how-to-join-three-or-more-tables-with-sql/#:~:tex
 https://stackoverflow.com/questions/23335970/postgresql-query-between-date-ranges
 
 https://stackoverflow.com/questions/63095867/how-to-get-the-frequency-in-postgresql
+
+https://tableplus.com/blog/2018/08/postgresql-how-to-add-a-foreign-key.html
+
+https://www.postgresql.org/docs/8.2/sql-createtable.html
+
+https://www.postgresql.org/docs/7.0/sql-createtable.htm
+
+https://www.geeksforgeeks.org/difference-between-primary-key-and-foreign-key/
+
